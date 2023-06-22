@@ -124,9 +124,15 @@ Assembly has 5 main types of instructions:
      - Depends on comparison
    - Unconditional
 
+## Logic Gates
+
+All of these instructions are implemented as logic gates. A logic gate is basically a transistor that takes two bits as input and outputs one bit (there are more complex gates, these are just the basics). It turns out this is enough to implement all of these types of assembly instructions!
+
+https://www.electronics-tutorials.ws/boolean/bool_7.html
 
 
 # Memory Access
+
 Since fast memory is more expensive, there's less of it. Because there's less of it, there's a limited amount of data we can keep in fast memory. Due to this, we have to constantly swap data in and out of memory according the needs of the currently running code. Let's say we need to fetch the value of a variable x from memory. We never get just one byte from memory; we get the additional memory location next to the location of x. The consequences of this are that if we store our data next to each other, we can often get better performance
 
 https://dl.acm.org/doi/pdf/10.1145/1563821.1563874
